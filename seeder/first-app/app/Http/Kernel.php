@@ -23,11 +23,6 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
     ];
 
-    protected $routeMiddleware = [
-        // Otros middlewares de ruta predeterminados de Laravel
-        'prueba' => \App\Http\Middleware\PrimerMiddleware::class,
-    ];
-
     /**
      * The application's route middleware groups.
      *

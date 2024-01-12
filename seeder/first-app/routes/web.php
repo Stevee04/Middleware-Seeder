@@ -20,13 +20,9 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PokemonController;
 
-// Route::get('/', [PokemonController::class, 'index']);
+Route::get('/', [PokemonController::class, 'index']);
 
-Route::get('/', function(){
-
-})->middleware('prueba');
-
-// Route::resource('pokemons', PokemonController::class);
+Route::resource('pokemons', PokemonController::class);
 
 
 // Route::get('/', [PokemonController::class, 'nombreDelMetodo']);
