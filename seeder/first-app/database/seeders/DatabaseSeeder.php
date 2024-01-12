@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        $this->call(lista_pokemons::class); //llamada a nuestro seeder a la hora de hacer el db:seed
 
-        $this->call(TaskSeeder::class); //llamada a nuestro seeder a la hora de hacer el db:seed
     }
 }

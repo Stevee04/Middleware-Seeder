@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TaskController;
+// use App\Http\Controllers\PokemonController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,10 +14,21 @@ use App\Http\Controllers\TaskController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+use App\Http\Controllers\PokemonController;
+
+// Route::get('/', [PokemonController::class, 'index']);
+
+Route::get('/', function(){
+
+})->middleware('prueba');
+
+// Route::resource('pokemons', PokemonController::class);
 
 
-//damos el acceso al controlador de tareas
-Route::resource('tasks', TaskController::class);
+// Route::get('/', [PokemonController::class, 'nombreDelMetodo']);
+
+// Route::resource('pokemons', PokemonController::class);

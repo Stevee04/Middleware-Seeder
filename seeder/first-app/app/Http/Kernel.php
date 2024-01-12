@@ -23,6 +23,11 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
     ];
 
+    protected $routeMiddleware = [
+        // Otros middlewares de ruta predeterminados de Laravel
+        'prueba' => \App\Http\Middleware\PrimerMiddleware::class,
+    ];
+
     /**
      * The application's route middleware groups.
      *
@@ -51,7 +56,6 @@ class Kernel extends HttpKernel
      * Aliases may be used instead of class names to conveniently assign middleware to routes and groups.
      *
      * @var array<string, class-string|string>
-     *   
      */
     protected $middlewareAliases = [
         'auth' => \App\Http\Middleware\Authenticate::class,
